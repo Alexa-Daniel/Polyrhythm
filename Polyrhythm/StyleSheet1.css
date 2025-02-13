@@ -1,0 +1,42 @@
+﻿#main {
+    background-color: black;
+    overflow: hidden;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: white;
+    opacity: 1;
+    position: absolute;
+    z-index: 10;
+    animation-name: travel-two;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes travel-to {
+    from {
+        top: 160px;
+    }
+
+    to {
+        top: 759px;
+    }
+}
+
+#muted {
+    position: absolute;
+    left: 935.5px;
+    top: 65.5px;
+    visibility: visible;
+}
+
+#unmuted {
+    position: absolute;
+    left: 935.5px;
+    top: 65.5px;
+    visibility: hidden;
+}
